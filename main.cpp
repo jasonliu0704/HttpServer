@@ -30,9 +30,7 @@ int main(int argc, char *argv[])
 		return 3;
 	}
 
-	string doc_root = argv[2];
-
-	start_httpd(port, doc_root);
+	start_httpd(port, argv[2], argv[1]);
 
 	return 0;
 }

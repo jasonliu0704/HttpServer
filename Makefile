@@ -1,8 +1,8 @@
 
 CC=g++
-CFLAGS=-ggdb -Wall -Wextra -pedantic -Werror
-DEPS = httpd.h
-SRCS = httpd.cpp
+CFLAGS=-ggdb -Wall -Wextra -pedantic -Werror --std=c++11
+DEPS = httpd.h Parser.h Practical.h Framer.h
+SRCS = httpd.cpp Parser.cpp Framer.cpp HttpServerUtility.cpp DieWithError.c
 MAIN_SRCS = main.c $(SRCS)
 MAIN_OBJS = $(MAIN_SRCS:.c=.o)
 
